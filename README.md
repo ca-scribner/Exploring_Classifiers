@@ -13,4 +13,4 @@ Using five classification algorithms:
 * Boosting (using AdaBoost)
 * K-Nearest Neighbors
 
-The code is broken up into a Jupyter Notebook for each data-algorithm combination, each of which contains a few notes describing results.  Supporting helper functions are contained in utilities.py, and data in the data folder.
+The code is broken up into a Jupyter Notebook for each data-algorithm combination, each of which contains a few notes describing results.  Supporting helper functions are contained in utilities.py, and data in the data folder (note that the data is compressed and must be uncompressed to run code).

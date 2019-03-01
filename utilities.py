@@ -338,7 +338,7 @@ def plotScoreCurve(lc, bottom = None, top = None, ax = None, savefig = False, le
         ax.get_figure().savefig(savefig)
     return ax
 
-def plotIterationCurve(lc, bottom = None, top = None, ax = None, savefig = False, legend = True, ls = ':'):
+def plotIterationCurve(lc, bottom = None, top = None, ax = None, savefig = False, ls = ':'):
     """
     Plot a learning curve of the number of iterations required to train on the held out test set
 
@@ -347,7 +347,6 @@ def plotIterationCurve(lc, bottom = None, top = None, ax = None, savefig = False
     :param bottom, top: (Optional) y-axis limits as specified by axes.set_ylim
     :param ax: (Optional) Axes object to plot curve to, 
     :param savefig: If not False, save the figure generated here to savefig
-    :param legend: If true, include a legend on the figure
     :param ls: (Optional) linestyle for all plots, passed to matplotlib plotting routines
 
     :return: Matplotlib axes object
@@ -362,8 +361,6 @@ def plotIterationCurve(lc, bottom = None, top = None, ax = None, savefig = False
     ax.set_ylim(bottom=bottom, top=top)
     ax.set_xlabel("Number of Data Points in Training Set")
     ax.set_ylabel("Iterations to Convergence in Training")
-    if legend:
-        ax.legend()
     if savefig:
         ax.get_figure().savefig(savefig)
     return ax
